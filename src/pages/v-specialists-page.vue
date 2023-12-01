@@ -1,6 +1,8 @@
 <template>
   <div class="v-specialists-page">
     <div class="specialist-card">
+      <div class="specialist-card-header">Сотников Евгений Иванович</div>
+      <img src="@/images/doctor.jpg" class="doctor-img"/>
     </div>
     <div class="specialist-card">
     </div>
@@ -42,8 +44,22 @@ export default {
   background-color: white;
   box-shadow: 3px 3px 10px gray;
 }
+.specialist-card-header{
+  padding-top: 10px;
+  margin: auto;
+  text-align: center;
+  font-size: 17px;
+  width: 280px;
+}
 .specialist-card:hover{
   border: 2px solid #358c21;
   box-shadow: 3px 3px 10px #b9ecad;
+}
+
+.doctor-img{
+  margin-top: 10px;;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 </style>
